@@ -14,7 +14,7 @@ function registrera_bok(){
 
         'public' => true,
         'label' =>'Böcker',
-        'show_in_rest' => true
+        //'show_in_rest' => true
              
     ];
 
@@ -26,10 +26,16 @@ function registrera_bok(){
 //var_dump
 //var_dump(get_posts() );
 
-$poster = get_posts();
-$post = $poster[0];
+//$poster = get_posts();
+//$post = $poster[0];
 
-$post_id = $post->ID;
+//$post_id = $post->ID;
+
+//echo $post_id;
+
+
+//post Meta
+//update_post_meta(8, 'citat', 'citat 1');
 
 
 
