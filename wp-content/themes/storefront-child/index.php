@@ -13,6 +13,18 @@
 
 get_header();   ?>
 
+
+<form action='http://localhost/labb2/wp-admin/admin-ajax.php'>
+	<input name="firstname" type="text">
+	<input name="lastname" type="text">
+	<input type="submit" name="skicka">
+
+	<input type="hidden" name="action" value="skicka-form">
+
+</form>
+
+
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -34,3 +46,6 @@ get_header();   ?>
 <?php
 do_action( 'storefront_sidebar' );
 get_footer();
+
+
+?>

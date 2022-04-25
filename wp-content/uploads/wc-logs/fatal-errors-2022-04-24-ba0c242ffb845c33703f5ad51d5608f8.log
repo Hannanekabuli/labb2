@@ -1,0 +1,19 @@
+2022-04-24T12:01:05+00:00 CRITICAL Uncaught Error: Undefined constant "kr" in C:\xampp\htdocs\labb2\wp-content\themes\storefront-child\woocommerce\emails\customer-invoice.php:33
+Stack trace:
+#0 C:\xampp\htdocs\labb2\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\labb2\wp-content\plugins\woocommerce\includes\wc-core-functions.php(364): wc_get_template('emails/customer...', Array, '', '')
+#2 C:\xampp\htdocs\labb2\wp-content\plugins\woocommerce\includes\emails\class-wc-email-customer-invoice.php(159): wc_get_template_html('emails/customer...', Array)
+#3 C:\xampp\htdocs\labb2\wp-content\plugins\woocommerce\includes\emails\class-wc-email.php(541): WC_Email_Customer_Invoice->get_content_html()
+#4 C:\xampp\htdocs\labb2\wp-content\plugins\woocommerce-email-test\functions.php(93): WC_Email->get_content()
+#5 C:\xampp\htdocs\labb2\wp-content\plugins\woocommerce-email-test\email-trigger.php(26): wetp_run_email_script()
+#6 C:\xampp\htdocs\labb2\wp-includes\class-wp-hook.php(307): wept_plugin_trigger_check('')
+#7 C:\xampp\htdocs\labb2\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\labb2\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\labb2\wp-includes\template-loader.php(13): do_action('template_redire...')
+#10 C:\xampp\htdocs\labb2\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\labb2\index.php(17): require('C:\\xampp\\htdocs...')
+#12 {main}
+  thrown in C:\xampp\htdocs\labb2\wp-content\themes\storefront-child\woocommerce\emails\customer-invoice.php on line 33
+
+2022-04-24T12:53:38+00:00 CRITICAL Unmatched '}' in C:\xampp\htdocs\labb2\wp-content\themes\storefront-child\functions.php on line 34
+

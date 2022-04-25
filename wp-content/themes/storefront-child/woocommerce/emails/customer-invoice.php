@@ -29,6 +29,8 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 <?php /* translators: %s: Customer first name */ ?>
 <p><?php printf( esc_html__( 'Hi %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) ); ?></p>
 
+
+<p>Tack för din bäställning. <?php echo $order->get_total();?> kr. </p>
 <?php if ( $order->needs_payment() ) { ?>
 	<p>
 	<?php
